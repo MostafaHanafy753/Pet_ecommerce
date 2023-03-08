@@ -207,6 +207,11 @@ html {
     -webkit-tap-highlight-color: transparent;
 }
 
+.header-responsive-logo {
+    font-weight: 800;
+    font-size: 30;
+}
+
 @-ms-viewport {
     width: device-width;
 }
