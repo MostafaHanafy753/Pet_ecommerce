@@ -188,7 +188,7 @@
 							<div class="ms-auto pageheader-btn">
 								<a href="allproducts.html" class="btn btn-primary btn-icon text-white me-2">
 									<span>
-										<i class="fe fe-plus"></i>
+					 
 									</span> All Product
 								</a>
 							</div>
@@ -214,26 +214,27 @@
 														<div class="col-lg-6">
 															<div class=" row mb-4">
 																<label class="col-md-3 form-label"
-																	for="product-code">Product Code </label>
-																<div class="col-md-9 validate-input">
-																	<input type="text" class="form-control"
-																		placeholder="E698V6523" required>
-																</div>
-															</div>
-														</div>
-														<!-- col -->
-														<div class="col-lg-6">
-															<div class=" row mb-4">
-																<label class="col-md-3 form-label"
 																	for="product-name">product Name</label>
 																<div class="col-md-9 validate-input">
-																	<input type="number" id="product_code"
+																	<input type="text" id="product_code"
 																		name="product_code" class="form-control"
 																		placeholder="Name of product" required>
 																</div>
 															</div>
 														</div>
 														<!-- col -->
+																		<!-- col -->
+																		<div class="col-lg-6">
+																			<div class=" row mb-4">
+																				<label class="col-md-3 form-label"
+																					for="product-name">Animal Name </label>
+																				<div class="col-md-9 validate-input">
+																					<input type="text" id="product_code"
+																						name="Animal" class="form-control"
+																						placeholder="Name of product" required>
+																				</div>
+																			</div>
+																		</div>
 														<div class="col-lg-6">
 															<div class="row">
 																<label class="col-md-3 form-label">Category</label>
@@ -256,8 +257,12 @@
 																<label class="col-md-3 form-label"
 																	for="product-code validate-input">Product Status </label>
 																<div class="col-md-9">
-																	<input type="number" max="1" min="0"
-																		class="form-control" placeholder="0">
+																	<select class="form-control select2"
+																		data-bs-placeholder="Choose One" required>
+																		<option label="Choose one">Choose One</option>
+																		<option>Active </option>
+																		<option>Not Active</option>
+																	</select>
 																</div>
 															</div>
 														</div>
@@ -306,29 +311,14 @@
 															</div>
 														</div>
 														<!-- col -->
-														<div class="col-lg-6">
-															<div class="row">
-																<label class="col-md-3 form-label">Vendor</label>
-																<div class="col-md-9 validate-input" >
-																	<select class="form-control select2"
-																		data-bs-placeholder="Choose One" required>
-																		<option label="Choose one">Choose One</option>
-																		<option>Apple</option>
-																		<option>Orange</option>
-																		<option>Mango</option>
-																		<option>Grapes</option>
-																		<option>Banana</option>
-																	</select>
-																</div>
-															</div>
-														</div>
+												
 														<!-- col -->
 														<div class="col-lg-6">
 															<div class="row">
-																<label class="col-md-3 form-label">Details</label>
+																<label class="col-md-3 form-label">Description</label>
 																<div class="col-md-9 validate-input" required>
 																	<textarea class="form-control"
-																		rows="2">Hiiiii.....</textarea>
+																		rows="2"></textarea>
 																</div>
 															</div>
 														</div>
@@ -338,9 +328,8 @@
 																<label class="col-md-3 form-label ">Product Image</label>
 
 																<div class="col mb-5">
-																	<div class="col-lg-12 col-sm-12 mb-4 mb-lg-0 validate-input" required>
-																		<input type="file" class="dropify"
-																			data-bs-height="180" />
+																	<div class="form-group mb-0">
+																		<input id="demo" type="file" name="files" accept=".jpg, .png, image/jpeg, image/png" multiple>
 																	</div>
 																</div>
 															</div>
